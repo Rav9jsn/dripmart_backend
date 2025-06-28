@@ -17,7 +17,7 @@ const {mongoConnect} = require("./util/databaseUtil");
 // Initialize app
 const app = express();
 app.use(cors({
-  origin: ['http://localhost:5173', 'https://your-frontend-domain.com'],
+  origin: ['http://localhost:5173', 'https://drip-mart.vercel.app'],
   credentials: true,
 }));
 app.use((req, res, next) => {
