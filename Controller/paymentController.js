@@ -69,10 +69,10 @@ exports.paymentverify = asyncHandler(async (req, res) => {
 
     await User.savepayment(paymentDetails, email);
     res.redirect(
-      `http://localhost:5173/Cart/paymentsuccess?reference=${razorpay_payment_id}`
+      `https://drip-mart.vercel.app/Cart/paymentsuccess?reference=${razorpay_payment_id}`
     );
   } else {
-    res.redirect(`http://localhost:5173/Cart`);
+    res.redirect(`https://drip-mart.vercel.app/Cart`);
   }
 });
 
